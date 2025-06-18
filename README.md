@@ -4,10 +4,15 @@ Información del proyecto: EcoTrack es una solución digital enfocada en el moni
 Autores:
 
 Chuchon Choquimamani, Jhon Alexander
+
 Hurtado Alfaro, Alexander Gabriel
+
 Palacios Valentin, Sebastian Wilfredo
+
 Palomino Aguilar, Eduardo Sebastián
+
 Rosales Pantaleon, Alfieri Esteban
+
 Gutierrez Garcia, Hugo Rodrigo
 
 Segmentos Objetivos:
