@@ -1,29 +1,225 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi Landing Page</title>
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <link rel="icon" type="image/x-icon" href="">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gymnasio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Contactanos.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <!--Google font-->
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    />
 </head>
 <body>
-<header>
-    <h1>Bienvenido a Mi Proyecto</h1>
-    <p>Explora nuestra solución digital para el futuro</p>
-</header>
+<!-- MENÚ SUPERIOR -->
+<nav class="top-header">
+    <a href="#" class="logo">
+        <img src="img/gym-logo.jpg" alt="Logo" />
+    </a>
 
-<main>
-    <section>
-        <h2>¿Qué ofrecemos?</h2>
-        <p>Una plataforma moderna, fácil de usar y adaptada a tus necesidades.</p>
-    </section>
-</main>
+    <!-- BOTÓN HAMBURGUESA -->
+    <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!-- Ícono de hamburguesa -->
+    </button>
 
-<footer>
-    <p>&copy; 2025 Mi Proyecto. Todos los derechos reservados.</p>
-</footer>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <ul class="menu-horizontal">
+        <li>
+            <a href="#">Quienes Somos</a>
+            <ul class="menu-vertical">
+                <li><a href="#">Descripcion</a></li>
+                <li><a href="#">Sedes</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Planes</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contáctanos</a></li>
+    </ul>
+</nav>
 
-<script src="assets/scripts/main.js"></script>
+<!-- SECCIÓN Descripcion -->
+<section class="historia">
+    <h2>Descripcion</h2>
+    <div class="historia-contenido">
+        <div class="historia-imagen">
+            <img src="images/Logo.png" alt="" />
+        </div>
+        <div class="historia-texto">
+            <p>
+                ¡Bienvenidos al programa de entrenamiento en el gimnasio! Este
+                espacio está diseñado para ayudarte a desarrollar fuerza,
+                resistencia y una mentalidad enfocada en el bienestar integral.
+            </p>
+            <p>
+                Recuerda que la constancia, la técnica adecuada y el respeto por tu
+                propio ritmo serán claves para alcanzar tus objetivos al finalizar
+                este ciclo de entrenamiento. ¡Es momento de activar tu energía,
+                desafiar tus límites y demostrar de qué estás hecho!
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN Servicios -->
+<section class="Servicios">
+    <h2>Servicios</h2>
+    <div class="Servicios-contenido">
+        <div class="Servicios-texto">
+            <p>Pega a qui tu texto</p>
+        </div>
+        <div class="Servicios-video">
+            <!--video https://www.youtube.com/watch?v=jcXF58wT0jE-->
+            <!--quitamos: watch?v= reemplazamos por: embed/  -->
+            <iframe
+                    src="https://www.youtube.com/embed/3__WfCtCxgc"
+                    title="Proposito de Estudio"
+                    allowfullscreen
+                    loading="lazy"
+            >
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN CONTÁCTANOS -->
+<section class="contacto">
+    <h2>Contáctanos</h2>
+    <div class="contacto-contenido">
+        <!-- FORMULARIO -->
+        <form class="formulario-contacto" id="formularioContacto">
+            <div class="form-grupo">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" />
+            </div>
+
+            <div class="form-grupo">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" />
+            </div>
+
+            <div class="form-grupo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" />
+            </div>
+
+            <div class="form-grupo">
+                <label for="email">Correo electrónico:</label>
+                <input type="text" id="email" name="email" />
+            </div>
+
+            <div class="form-grupo">
+                <label for="asunto">Duda:</label>
+                <textarea id="asunto" name="asunto" rows="3"></textarea>
+            </div>
+
+            <div class="form-grupo">
+                <label>Preferencias de contacto:</label>
+                <div class="checkboxes">
+                    <label
+                    ><input type="checkbox" name="preferencia" value="correo" />
+                        Correo</label
+                    >
+                    <label
+                    ><input type="checkbox" name="preferencia" value="telefono" />
+                        Teléfono</label
+                    >
+                </div>
+            </div>
+
+            <div class="form-grupo">
+                <label>¿Eres estudiante?</label>
+                <div class="radios">
+                    <label
+                    ><input type="radio" name="estudiante" value="si" /> Sí</label
+                    >
+                    <label
+                    ><input type="radio" name="estudiante" value="no" /> No</label
+                    >
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- TEXTO A LA DERECHA -->
+        <div class="contacto-instrucciones">
+            <p>
+                Completa el formulario con tus datos. Nuestro equipo se pondrá en
+                contacto contigo según la información proporcionada.
+            </p>
+            <p>
+                Recuerda usar un correo válido y seleccionar tu tipo de documento
+                correctamente. Si eres estudiante, indícalo para acceder a
+                beneficios exclusivos.
+            </p>
+            <div
+                    id="mensajeEnviado"
+                    class="mensaje-enviado"
+                    style="display: none"
+            >
+                Mensaje enviado correctamente.
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PIE DE PAGINA -->
+
+<section id="footer">
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo y nombre de sitio -->
+            <div class="footer-brand">
+                <img src="img/gym-logo.jpg" alt="Logo" class="footer-logo" />
+                <p>Gym Alex</p>
+                <small>© 2025 Todos los derechos reservados</small>
+            </div>
+
+            <!-- Enlaces legales -->
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="Documentos/PoliticadePrivacidad.pdf"
+                >Política de Privacidad</a
+                >
+                <!-- Dentro de href llama a un documento pdf con la poltica-->
+                <a href="#">Términos y Condiciones</a>
+                <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+                <a href="Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+            </div>
+
+            <!-- Redes sociales con íconos personalizados -->
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <a href="#"
+                ><img
+                        src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                        class="social-icon"
+                /></a>
+                <a href="#"
+                ><img
+                        src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                        alt="Instagram"
+                        class="social-icon"
+                /></a>
+                <a href="#"
+                ><img
+                        src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                        alt="LinkedIn"
+                        class="social-icon"
+                /></a>
+                <a href="#"
+                ><img
+                        src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                        alt="Twitter"
+                        class="social-icon"
+                /></a>
+            </div>
+        </div>
+    </footer>
+</section>
+<script src="main.js"></script>
 </body>
 </html>
