@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="559e1ed3-8f87-4a2f-91e4-54dd42fe01f1" name="Changes" comment="Challenge landing page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/index.html" beforeDir="false" />
-    </list>
+    <list default="true" id="559e1ed3-8f87-4a2f-91e4-54dd42fe01f1" name="Changes" comment="Challenge landing page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +88,7 @@
       <workItem from="1751296915937" duration="1430000" />
       <workItem from="1751298434385" duration="363000" />
       <workItem from="1751404491281" duration="790000" />
-      <workItem from="1751407252587" duration="840000" />
+      <workItem from="1751407252587" duration="885000" />
     </task>
     <task id="LOCAL-00001" summary="Este es mi primer Commit">
       <option name="closed" value="true" />
@@ -157,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751407236652</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Challenge landing page">
+      <option name="closed" value="true" />
+      <created>1751408138593</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1751408138593</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
