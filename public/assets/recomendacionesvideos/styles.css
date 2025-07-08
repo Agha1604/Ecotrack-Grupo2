@@ -1,0 +1,158 @@
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f9f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+h1,
+h2 {
+  color: #2e8b57;
+  margin-bottom: 25px;
+}
+
+/* Sección de FAQs */
+.faq-section {
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  color: #2e8b57;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.faq-answer {
+  padding-left: 20px;
+}
+
+.faq-answer p {
+  margin-bottom: 10px;
+}
+
+/* Sección de Recomendaciones */
+.recommendations-section {
+  margin-bottom: 40px;
+}
+
+.recommendation-card {
+  background-color: #f0f8f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #4caf50;
+}
+
+/* Sección de Consejos Diarios */
+.daily-tips-section {
+  margin-bottom: 40px;
+}
+
+.tip-card {
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #2196f3;
+}
+
+/* Sección de Videos */
+.videos-section {
+  margin-bottom: 20px;
+}
+
+.video-card {
+  background-color: #fff8f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #ff9800;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.video-tip {
+  font-style: italic;
+  color: #555;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+/* Elementos comunes */
+.quote {
+  font-style: italic;
+  font-weight: bold;
+  color: #2e8b57;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .faq-question {
+    font-size: 18px;
+  }
+
+  .recommendation-card,
+  .tip-card,
+  .video-card {
+    padding: 15px;
+  }
+}
