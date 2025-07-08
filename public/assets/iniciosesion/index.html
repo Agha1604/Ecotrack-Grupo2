@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECOTRACK</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Logo -->
+    <header class="header">
+      <img src="images/Logo.PNG" alt="Logo ECOTRACK" class="logo" />
+    </header>
 
+    <!-- Contenedor principal -->
+    <main class="login-container">
+      <!-- FORMULARIO INICIO DE SESIÓN -->
+      <div id="form-login" class="form-block">
+        <h1 class="titulo">BIENVENIDO A ECOTRACK</h1>
+        <form class="formulario">
+          <input
+            type="text"
+            placeholder="Nombre de usuario"
+            class="campo-input"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Contraseña"
+            class="campo-input"
+            required
+          />
+          <button
+            type="button"
+            class="btn-iniciar"
+            onclick="mostrarLoginEmail()"
+          >
+            Inicia Sesión
+          </button>
+
+          <button
+            type="button"
+            class="btn-crear-cuenta"
+            onclick="mostrarCrearCuenta()"
+          >
+            Crear Cuenta
+          </button>
+        </form>
+      </div>
+
+      <!-- FORMULARIO CREAR CUENTA -->
+      <div id="form-crear-cuenta" class="form-block oculto">
+        <h1 class="titulo crear-cuenta-titulo">Crear Cuenta</h1>
+        <form id="formCrearCuenta" class="formulario">
+          <label>Email:</label>
+          <input type="email" id="email" class="campo-input" />
+
+          <label>Número de teléfono:</label>
+          <input type="tel" id="telefono" class="campo-input" />
+
+          <label>DNI:</label>
+          <input type="text" id="dni" class="campo-input" />
+
+          <label>Contraseña:</label>
+          <input type="password" id="contrasena" class="campo-input" />
+
+          <label>Confirmar contraseña:</label>
+          <input type="password" id="confirmarContrasena" class="campo-input" />
+
+          <button type="submit" class="btn-iniciar">Crear Cuenta</button>
+        </form>
+      </div>
+      <!-- FORMULARIO NUEVO: Inicia Sesión con email -->
+      <div id="form-login-email" class="form-block oculto">
+        <h1 class="titulo crear-cuenta-titulo">Inicia Sesión</h1>
+        <form id="formLoginEmail" class="formulario">
+          <label>Email:</label>
+          <input type="email" id="loginEmail" class="campo-input" />
+
+          <label>Contraseña:</label>
+          <input type="password" id="loginContrasena" class="campo-input" />
+
+          <button type="submit" class="btn-iniciar">Inicia Sesión</button>
+        </form>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Fondo general */
+body {
+  background-color: white;
+  min-height: 100vh;
+}
+
+/* Encabezado con logo */
+.header {
+  padding: 20px 40px;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* Contenedor central */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+/* Título */
+.titulo {
+  font-size: 28px;
+  color: #388e3c; /* Verde no tan oscuro */
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.crear-cuenta-titulo {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+/* Formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.formulario label {
+  font-size: 15px;
+  color: #333;
+}
+
+/* Campos de entrada */
+.campo-input {
+  width: 100%;
+  padding: 12px;
+  background-color: #a5d6a7; /* Verde suave */
+  color: black;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+.campo-input::placeholder {
+  color: black;
+}
+
+/* Botón principal */
+.btn-iniciar {
+  width: 100%;
+  padding: 12px;
+  background-color: #a5d6a7; /* Mismo verde suave */
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-iniciar:hover {
+  background-color: #81c784;
+}
+
+/* Botón secundario */
+.btn-crear-cuenta {
+  width: 100%;
+  padding: 12px;
+  background-color: #a5d6a7; /* Mismo verde suave */
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-crear-cuenta:hover {
+  background-color: #81c784;
+}
+
+.oculto {
+  display: none;
+}
