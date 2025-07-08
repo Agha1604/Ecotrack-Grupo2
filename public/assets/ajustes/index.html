@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajustes | ECOTRACK</title>
+    <link rel="stylesheet" href="ajustes.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <main class="ajustes-container">
+      <h2 class="titulo">Subir Foto de Perfil:</h2>
+
+      <input type="file" id="fotoPerfil" accept="image/*" />
+
+      <br /><br />
+
+      <img
+        id="vistaPrevia"
+        class="foto-perfil"
+        src=""
+        alt="Vista previa de perfil"
+      />
+
+      <h2 class="titulo">Cambiar Correo Electrónico:</h2>
+      <input
+        type="email"
+        id="nuevoCorreo"
+        class="campo-input"
+        placeholder="Nuevo correo electrónico"
+      />
+
+      <button id="btnCambiarCorreo" class="btn-iniciar">
+        Actualizar Correo
+      </button>
+
+      <h2 class="titulo">Cambiar Contraseña:</h2>
+
+      <input
+        type="password"
+        id="contrasenaActual"
+        class="campo-input"
+        placeholder="Contraseña actual"
+      />
+
+      <input
+        type="password"
+        id="nuevaContrasena"
+        class="campo-input"
+        placeholder="Nueva contraseña"
+      />
+
+      <input
+        type="password"
+        id="confirmarContrasena"
+        class="campo-input"
+        placeholder="Confirmar nueva contraseña"
+      />
+
+      <button id="btnCambiarContrasena" class="btn-iniciar">
+        Cambiar Contraseña
+      </button>
+
+      <h2 class="titulo">Notificaciones</h2>
+
+      <div class="notificaciones-opciones">
+        <div class="opcion">
+          <span>SI</span>
+          <input type="checkbox" id="notificacionSi" class="checkbox" />
+        </div>
+        <div class="opcion">
+          <span>NO</span>
+          <input type="checkbox" id="notificacionNo" class="checkbox" />
+        </div>
+      </div>
+
+      <button id="btnGuardarNotificaciones" class="btn-iniciar">Guardar</button>
+
+      <div class="acciones-secundarias">
+        <h2 class="titulo">Recuperar Contraseña</h2>
+
+        <input
+          type="email"
+          id="correoRecuperacion"
+          class="campo-input"
+          placeholder="Correo"
+        />
+        <button id="btnRecuperar" class="btn-secundario">Recuperar</button>
+        <button id="cerrarSesion" class="btn-secundario">Cerrar Sesión</button>
+        <button id="btnEliminarCuenta" class="btn-secundario">
+          Eliminar Cuenta
+        </button>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
 
