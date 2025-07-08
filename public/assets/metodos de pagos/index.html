@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoTrack - Suscripción</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Pantalla 1: Selección de Plan -->
+      <section id="plan-selection" class="active-section">
+        <h1>PAGO SUSCRIPCION</h1>
 
+        <div class="plans-container">
+          <!-- Plan Gratuito -->
+          <div class="plan-card">
+            <h2>Plan Gratuito</h2>
+            <ul>
+              <li>Monitoreo básico de consumo</li>
+              <li>Reportes mensuales</li>
+              <li>Alertas de consumo</li>
+              <li>Integración con dispositivos inteligentes (3 max.)</li>
+            </ul>
+            <div class="plan-price">GRATIS</div>
+            <button class="btn-select" data-plan="free">Seleccionar</button>
+          </div>
+
+          <!-- Plan Premium -->
+          <div class="plan-card">
+            <h2>Plan Premium</h2>
+            <ul>
+              <li>Plan Gratuito +</li>
+              <li>Monitoreo avanzado</li>
+              <li>Integración con dispositivos inteligentes (10 max.)</li>
+              <li>Soporte prioritario</li>
+            </ul>
+            <div class="plan-price">$30/MES</div>
+            <button class="btn-select" data-plan="premium">Seleccionar</button>
+          </div>
+
+          <!-- Plan Mega -->
+          <div class="plan-card">
+            <h2>Plan Mega</h2>
+            <ul>
+              <li>Plan Premium +</li>
+              <li>Acceso anticipado a nuevas funciones</li>
+              <li>Asistencia en emergencias ambientales</li>
+            </ul>
+            <div class="plan-price">$60/MES</div>
+            <button class="btn-select" data-plan="mega">Seleccionar</button>
+          </div>
+        </div>
+
+        <button id="btn-next" class="btn-primary" disabled>Siguiente</button>
+      </section>
+
+      <!-- Pantalla 2: Formulario de Pago -->
+      <section id="payment-form" class="hidden-section">
+        <h1>Pago Suscripción</h1>
+
+        <form id="payment-form-data">
+          <div class="form-group">
+            <label for="card-number">NÚMERO DE TARJETA</label>
+            <input
+              type="text"
+              id="card-number"
+              placeholder="1234 5678 9012 3456"
+              maxlength="19"
+            />
+            <div class="card-icons">
+              <img src="https://logo.clearbit.com/visa.com" alt="Visa" />
+              <img
+                src="https://logo.clearbit.com/mastercard.com"
+                alt="Mastercard"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="card-expiry">VENCIMIENTO</label>
+              <input
+                type="text"
+                id="card-expiry"
+                placeholder="MM/AA"
+                maxlength="5"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="card-cvc">CÓDIGO SEGURIDAD</label>
+              <input
+                type="text"
+                id="card-cvc"
+                placeholder="CVC"
+                maxlength="3"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="card-email">CORREO ELECTRÓNICO</label>
+            <input
+              type="email"
+              id="card-email"
+              placeholder="tucorreo@ejemplo.com"
+            />
+          </div>
+
+          <div class="form-actions">
+            <button type="button" id="btn-back" class="btn-secondary">
+              Regresar
+            </button>
+            <button type="submit" id="btn-confirm" class="btn-primary">
+              Confirmar Pago
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Pantalla 3: Confirmación de Pago -->
+      <section id="payment-confirmation" class="hidden-section">
+        <div class="confirmation-box">
+          <div class="check-icon">✓</div>
+          <h1>PAGO EXITOSO</h1>
+          <p id="confirmation-message">
+            Tu suscripción ha sido activada correctamente.
+          </p>
+          <button id="btn-return" class="btn-primary">Regresar</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="subscription.js"></script>
+  </body>
+</html>
